@@ -1,0 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+/*.dinosaur{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+@keyframes imagehero { 
+  0% {background-image: "myhero1.png";}
+  33%{background-image: "myheroo.png";}
+  66%{background-image: "myhero1.png";}
+  100%{background-image: "myhero2.png";}
+
+  
+}
+}
+*/

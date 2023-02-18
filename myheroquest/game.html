@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/bmoren/p5.collide2D/p5.collide2d.min.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="webpd.min.js";></script>
+    <script src="jquery.min.js";></script>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="icon" type="image/x-icon" href="myheroo.png"/>
+  </head>
+ 
+  <body>
+     
+    <script src="dinosaur.js"></script>
+    <script src="obstacle.js"></script>
+    <script src="coin.js"></script>
+    <script src="sketch.js"></script>
+    <input type="text" id="playername" value="YourName">
+    <button onKeydown="myFunction()">Save Name</button>
+    <button onclick="myFunction()">Show Highscore</button>
+    <p id="Name"></p><br>
+    <p id="Highscore"></p>
+    
+
+
+    <script>
+      
+      
+      localStorage.setItem('Highscore',score);
+     
+      localStorage.setItem('Name',playername.value); 
+
+     
+      function myFunction() {
+     
+        if (score<Highscore) {
+          localStorage.setItem('Highscore',score);
+          localStorage.setItem('Name',playername); 
+
+
+   //    document.getElementById('playername').addEventListener("click", function(){window.localStorage.setItem('player',
+     //  JSON.stringify({name: id="playername".value }))})
+        }
+    
+     }
+      </script>
+</body>
+</html>
